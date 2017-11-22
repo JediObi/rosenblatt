@@ -47,7 +47,7 @@ def plot_decision_region(X, y, classifier, resolution=0.01):
 
     # contourf()等高线工具，这个工具不绘制等高线，但是会使用颜色填充等高区域
     # 等高线的区域等效于contour()，声明的坐标绘制等高线，未声明的坐标，按所在区间填充颜色
-    # 区域 x = Ax1, y= Ax1, 前二者是坐标区域，Z = A x 1表示高度数据
+    # 区域 x = Ax1, y= Ax1, 前二者是坐标区域，Z = A x 1表示高度数据，比如x和y里各两个数据，相当于两个点，那么这中间的连线就会被标注成Z里某个值
     # cmap指定了不同区域对应的颜色
     plt.contourf(xx1, xx2, Z, alpha=0.4, cmap=cmap)
     # 限制绘制区域
